@@ -170,11 +170,6 @@ print_color "green" "Cloning GIT repo..."
 sudo yum install -y git
 sudo git clone https://github.com/mohsinkamaal-mulla/ecommerce-php-app.git /var/www/html/
 
-echo $dbHost
-echo $dbUser
-echo $dbPassword
-echo $dbName
-
 # Replace database IP with localhost
 sudo sed -i 's/172.20.1.101/localhost/g' /var/www/html/index.php
 
